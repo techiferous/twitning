@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="javascripts/slides.js"></script>
+    <link href="stylesheets/slides.css" rel="stylesheet">
+    <link href="stylesheets/themes/basic.css" rel="stylesheet">
+    <link href="stylesheets/custom.css" rel="stylesheet">
+    <title>Twitning Talks</title>
+  </head>
+  <body>
+    <div id="slideshow">
+      <section>
+        <h1>Twitning Talks</h1>
+        <h2>Insanely Short Presentations</h2>
+        <button id="play">PLAY ▶</button>
+      </section>
+      <section>
+        <header><h1>Key Navigation</h1></header>
+        <table>
+          <tr>
+            <td class="key">ESC</td>
+            <td>pause the presentation</td>
+          </tr>
+          <tr>
+            <td class="key">&rarr; or SPACE</td>
+            <td>next slide</td>
+          </tr>
+          <tr>
+            <td class="key">&larr;</td>
+            <td>previous slide</td>
+          </tr>
+          <tr>
+            <td class="key">SHIFT + CMD + F</td>
+            <td>toggle full screen</td>
+          </tr>
+        </table>
+      </section>
+      <section class="section_intro">
+        <h1>Part I</h1>
+        <h2>About Twitning Talks</h2>
+      </section>
+      <section>
+        <header><h1>About Twitning Talks</h1></header>
+        <ul>
+          <li>
+            Twitning is a portmanteau of Twitter and lightning.
+          </li>
+          <li>
+            Twitning talks are lightning talks that must not exceed 1:40.
+          </li>
+          <li>
+            They are inspired by Ignite presentations.
+          </li>
+        </ul>
+        <footer>
+          Disclaimer: Twitning talks are not affiliated with Twitter.
+        </footer>
+      </section>
+      <section>
+        <header><h1>About Twitning Talks</h1></header>
+        <ul>
+          <li>
+             A twitning talk consists of 10 slides.
+          </li>
+          <li>
+             Each slide autoadvances every 10 seconds.
+          </li>
+        </ul>
+      </section>
+      <section class="section_intro">
+        <h1>Part II</h1>
+        <h2>Creating a Twitning Talk</h2>
+      </section>
+      <section>
+        <header><h1>Creating a Twitning Talk</h1></header>
+        <ul>
+          <li>
+            To create a twitning talk, fork this code on github.
+          </li>
+          <li>
+            Replace the contents of index.html with the contents of your slideshow.
+          </li>
+          <li>
+            This code comes with a default CSS theme, basic.css.
+          </li>
+          <li>
+            Add your own style tweaks to custom.css.  Or you can create
+            a completely new CSS theme.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <header><h1>Creating a Twitning Talk</h1></header>
+        <ul>
+          <li>
+            This slideshow is only targeted at Chrome and Firefox.
+            It works reasonably well in Safari and Opera, but Safari does
+            not have fullscreen mode.
+          </li>
+          <li>
+            Your presentation should actually have twelve slides: a title slide,
+            ten presentation slides,
+            and an ending slide.  When the ending slide displays, your time
+            is up (you do not have 10 seconds for the ending slide).
+          </li>
+          <li>
+            Avoid putting content on the bottom third of the screen.  This
+            bullet point is too low and much of the audience won't be
+            able to read it.
+          </li>
+        </ul>
+      </section>
+      <section class="section_intro">
+        <h1>Part III</h1>
+        <h2>Sample Page Layouts</h2>
+      </section>
+      <section>
+        <header><h1>Header</h1></header>
+        <p>
+          This demonstrates a page with a header and a paragraph of text.
+        </p>
+      </section>
+      <section>
+        <header><h1>Code</h1></header>
+        <p>
+          This demonstrates a page containing code.
+        </p>
+        <pre>
+def display_dependency_tree
+  displayable_tasks = tasks.select do |t|
+    t.comment && t.name =~ options.show_task_pattern
+  end
+  for task in displayable_tasks
+    $indent = 0
+    puts task.name
+    display_dependent_tasks(task)
+  end
+end
+        </pre>
+      </section>
+      <section id="image_background">
+        <header><h1>Image</h1></header>
+        <img src="images/tigers.jpg" />
+      </section>
+      <section>
+        <header><h1>Image</h1></header>
+        <p>
+          Note that it's not straightforward to use an image as the background of
+          a slide, since the slide dimensions are the screen resolution and
+          you don't know them ahead of time.  It's possible to accomplish this, however,
+          with JavaScript.
+        </p>
+      </section>
+      <section id="last_slide">
+        <h1>Process.exit!</h1>
+      </section>
+    </div>
+  </body>
+</html>

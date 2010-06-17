@@ -1,0 +1,75 @@
+/* This stylesheet contains a basic set of default styles for a
+   nice-looking presentation. */
+
+body {
+  font-size: 2.5em;
+  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+header {
+  font-size: 0.75em;
+}
+
+header h1, h2, h3, h4, h5, h6 {
+  margin-top: 50px;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+p, pre {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+ul, ol {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, li {
+  padding: 10px;
+  padding-right: 25px;
+}
+
+button#play {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  opacity: 0.25;
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1em;
+  background-color: rgb(40, 140, 40);
+  border: none;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button#play:hover {
+  opacity: 0.8;
+}

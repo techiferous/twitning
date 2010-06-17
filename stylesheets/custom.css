@@ -1,0 +1,27 @@
+/* This stylesheet contains styles particular to this specific slideshow. */
+
+.section_intro {
+  background-color: maroon;
+}
+
+.section_intro {
+  color: white;
+}
+
+pre {
+  color: maroon;
+}
+
+td.key {
+  color: blue;
+}
+
+#last_slide {
+  background-color: maroon;
+  color: white;
+}
+
+#last_slide h1 {
+  font-family: "Courier New";
+  margin-top: 250px;
+}

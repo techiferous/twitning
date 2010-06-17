@@ -1,0 +1,10 @@
+/* This stylesheet contains the styles necessary for the slideshow to
+   layout properly.  Also note that other styles necessary for this
+   slideshow to work are set using JavaScript. */
+
+section {
+  float: left;
+  overflow: hidden;
+  margin: 0;
+  /* note: inserting padding to this element confuses the slide width */
+}
